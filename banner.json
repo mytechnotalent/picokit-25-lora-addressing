@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-25-lora-addressing",
+  "eyebrow": "PICOKIT // LESSON 25",
+  "title": "PICOKIT // LORA ADDRESSING",
+  "subtitle": "ADDRESS FILTER + SENDER + AUTHENTICATED HEARTBEAT",
+  "accent": "#2463FF",
+  "dim": "#163D9E",
+  "white": "#D5E0FF",
+  "cyan": "#7FD8E0",
+  "bg": "#020611",
+  "bg_edge": "#000105",
+  "icon": "hash",
+  "panel_status": "TO 25  ·  FROM 0x0001  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "TARGET",
+      "value": "25"
+    },
+    {
+      "label": "SENDER",
+      "value": "0001"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-47 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway cli send --node 25 --command 2",
+    "[*] node 00025  seq 18  HEARTBEAT  AEAD ok",
+    "[*] frame target 25 accepted  sender 0001",
+    "[+] sender 0x0001 printed  stored",
+    "[+] ack sent  rssi -47  snr 8.0"
+  ],
+  "categories": [
+    "ADDRESS",
+    "SENDER",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "TO-01",
+      "label": "target",
+      "value": "25"
+    },
+    {
+      "tag": "RX-01",
+      "label": "sender",
+      "value": "0001"
+    },
+    {
+      "tag": "HB-01",
+      "label": "heartbeat",
+      "value": "5 s"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  ADDRESSED FRAMES  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  ADDRESS  ·  FILTER  ·  RADIO  ==[ SENDER ]=="
+  ],
+  "layout": "grid",
+  "stat": "25"
+}
